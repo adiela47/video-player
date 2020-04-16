@@ -1,0 +1,38 @@
+.video-js-responsive-container.vjs-hd {
+    padding-top: 42%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.video-js-responsive-container.vjs-sd {
+    padding-top: 75%;
+}
+.video-js-responsive-container {
+    width: 75%;
+    
+}
+.video-js-responsive-container .video-js {
+    height: 75% !important; 
+    width: 80% !important;
+    position: absolute;
+    top: 5px;
+    left:25px;
+    
+}
+.video-js{
+    font-size: 15px;
+    background-color: darkgray;
+}
+.video-js.vjs-logo .vjs-logo-content.vjs-logo-hide{
+    visibility: visible;
+    opacity: 1;
+}
+.vjs-play-progress.vjs-slider-bar{
+    background-color: rgb(18, 214, 190);
+}
+.video-js .vjs-play-progress:before{
+    color:rgb(42, 98, 173)
+    
+}
+.vjs-has-started.vjs-user-inactive.vjs-playing .vjs-control-bar{
+    opacity: 1;
+}

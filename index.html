@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset=utf-8 />
+  <title>Video</title>
+  
+  <link rel="stylesheet" href="node_modules/video.js/dist/video-js.css">
+  <link rel="stylesheet" href="node_modules/videojs-logo/dist/videojs-logo.css">
+  <link rel="stylesheet" href="node_modules/videojs-hls-quality-selector/dist/videojs-hls-quality-selector.css">
+  <!-- <link rel="stylesheet" href="node_modules/videojs-hlsjs-progress-control/dist/videojs-hlsjs-progress-control.css"> -->
+  <link rel="stylesheet" href="node_modules/videojs-http-source-selector/dist/videojs-http-source-selector.css">
+  <link rel="stylesheet" href="node_modules/videojs-seek-buttons/dist/videojs-seek-buttons.css">
+  <link rel="stylesheet" href="node_modules/videojs-airplay/dist/videojs.airplay.css">
+  <link rel="stylesheet" href="node_modules/videojs-dvr/dist/videojs-dvr.css">
+ 
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+  <script src="node_modules/video.js/dist/video.js"></script>
+  <script src="node_modules/videojs-logo/dist/videojs-logo.js"></script>
+  <script src="node_modules/videojs-hls-quality-selector/dist/videojs-hls-quality-selector.js"></script>
+  <script src="node_modules/videojs-contrib-quality-levels/dist/videojs-contrib-quality-levels.js"></script>
+  <script src="node_modules/videojs-chapter-nav/dist/videojs.chapter-nav.js"></script>
+  <script src="node_modules/videojs-http-source-selector/dist/videojs-http-source-selector.js"></script>
+  
+  <script src="node_modules/videojs-seek-buttons/dist/videojs-seek-buttons.js"></script>
+  <script src="node_modules/videojs-airplay/dist/videojs.airplay.js"></script>
+  <script src="node_modules/videojs-shuttle-controls/dist/videojs-shuttle-controls.js"></script>
+  <script src="node_modules/videojs-dvr/dist/videojs-dvr.js"></script>
+  
+</head>
+
+<body>
+  <div class="video-js-responsive-container vjs-hd">
+    <video id="my-video" class="video-js vjs-default-skin" width="1200" height="600"  controls preload="auto"
+      data-setup='{"playbackRates": [1, 1.5, 2]}'>
+     
+      <source src="https://s3.abntelevision.com/avivamientoabr/stream/playlist.m3u8" type='application/x-mpegURL' >
+ 
+    </video>
+  </div>
+
+</body>
+<script src="videoplayer.js"></script>
+
+</html>
